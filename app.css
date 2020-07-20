@@ -1,0 +1,244 @@
+
+html, body{
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 15pt;
+	height: 100%;
+}
+
+.hero {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('coverimage.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	display: flex;
+	position: relative;
+}
+
+.hero-text {
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#text {
+	margin: 0 auto;
+	width: 650px;
+	padding: 100px 10px 10px 10px;
+}
+
+#content {
+	position: relative;
+	width: 100%;
+	padding: 100px 10px 10px 10px;
+}
+
+#content-two {
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	padding: 100px 10px 10px 10px;
+}
+
+#map {
+	display: block;
+	margin: 100px 0px 0px 0px;
+	padding: 0px;
+	fill: #fff;
+	position: absolute;
+	left: 20%;
+}
+
+h1 {
+	text-align: center;
+	font: 900 60px "Libre Franklin";
+	letter-spacing: 0em;
+	line-height: 1em;
+	text-shadow: 2px 2px 3px black;
+}
+
+h2 {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h2.year {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h2.source {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+h3 {
+	text-align: center;
+	font: 700 30px "Libre Franklin";
+	letter-spacing: 0em;
+	line-height: 1em;
+	text-shadow: 2px 2px 3px black;
+}
+
+h4 {
+	text-align: center;
+	font: 900 20px "Martel Sans";
+	letter-spacing: 0.1em;
+	line-height: 1em;
+	text-shadow: 2px 2px 3px black;
+}
+
+
+h5 {
+	margin: 10px 0px 0px 0px;
+	font: 400 25px "Nanum Myeongjo";
+	line-height: 30px;
+}
+
+h5:first-letter {
+	float: left;
+	font-size: 80px;
+	line-height: 1;
+	margin-right: 9px;
+}
+
+p {
+	margin: 10px 0px 0px 0px;
+	font: 400 25px "Nanum Myeongjo";
+	line-height: 30px;
+}
+
+
+input {
+	display: block;
+	width: 200px;
+	margin: 10px 0px 0px 0px;
+}
+
+svg {
+	margin-top: 50px;
+	position: relative;
+	left: 48%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.zip {
+	stroke: #fff;
+	stroke-width: 1;
+	stroke-linejoin: round;
+}
+
+.zip:hover {
+	fill-opacity: 0.6;
+}
+
+.tooltip {
+	position: absolute;
+	padding: 7px;
+	font-size: 0.9em;
+	pointer-events: none;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.tooltip p {
+	margin: 0;
+	padding: 0;
+	font-size: 0.7em;
+	font: 400 15px "Libre Franklin";
+}
+
+#legend {
+	margin: 100px 0px 0px 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#slider {
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+#select {
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	display: block;
+}
+
+.axis path,, .axis line {
+	fill: none;
+	stroke: #ccc;
+	shape-rendering: crispEdges;
+	border-width: 2px;
+}
+
+.axis line {
+	stroke: #eee;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+.domain {
+	stroke-width: 1px;
+}
+
+.line {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+path.line {
+	fill: none;
+	stroke-width: 1.5px;
+}
+
+.x.axis .tick text, .y.axis .tick text, .city text {
+  color: #333;
+  font-size: 0.9em;
+  padding: 5px;
+}
+
+.g-baseline line {
+  stroke: #333;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.city text {
+  display: none;
+  font: 600 15px "Libre Franklin";
+}
+
+.city:hover text {
+  display: block;
+}
+
+.city .line {
+  opacity: 0.4;
+  stroke: #f5587b;
+}
+
+.city .line:hover {
+  opacity: 1;
+}
+
+.bar {
+	display: inline-block;
+	fill: #ffc6be;
+	opacity: 0.8;
+}
+
+
